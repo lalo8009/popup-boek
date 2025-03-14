@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactief Pop-up Boek</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    #popup-book {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .template {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .template:hover {
+      transform: scale(1.05);
+    }
+
+    .template img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:focus {
+      outline: 2px solid #ffbf47;
+    }
+
+    @media (max-width: 768px) {
+      .template {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="popup-book">
+    <h1>📖 Interactief Pop-up Boek</h1>
+
+    <!-- Eerste sjabloon -->
+    <div class="template">
+      <h2>Dieren Pop-Up Kaart</h2>
+      <img src="https://via.placeholder.com/200x200.png?text=Dieren+Pop-Up" alt="Dieren Pop-Up" />
+      <p>Boslandschap met een hert, een vos en een konijn.</p>
+      <button aria-label="Download Dieren Pop-Up Sjabloon" onclick="window.location.href='https://jouwlink.naar.bestand1'">📥 Download Sjabloon</button>
+    </div>
+
+    <!-- Tweede sjabloon -->
+    <div class="template">
+      <h2>Boot Pop-Up Kaart</h2>
+      <img src="https://via.placeholder.com/200x200.png?text=Boot+Pop-Up" alt="Boot Pop-Up" />
+      <p>Oceaanscène met een zeilboot en zeemeeuwen.</p>
+      <button aria-label="Download Boot Pop-Up Sjabloon" onclick="window.location.href='https://jouwlink.naar.bestand2'">📥 Download Sjabloon</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
